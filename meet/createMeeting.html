@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css">
+    <script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.1.2/weui.min.js"></script>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+<div class="page createMeeting">
+    <div class="page-top">
+    </div>
+    <div class="page__bd">
+        <div class="weui-tab" style="height: 1000px;">
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">会议名称</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text" pattern="" placeholder="名称小于30字"/>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label for="" class="weui-label">会议开始时间</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="datetime-local" value="" placeholder=""/>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label for="" class="weui-label">会议结束时间</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="datetime-local" value="" placeholder=""/>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">联系电话</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="number" pattern="" placeholder="请输入手机或固定电话"/>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">会议地区</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text" pattern="" placeholder="会议所在城市"/>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">会议地点</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="number" pattern="" placeholder="会议详细地址"/>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">主办单位</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="number" pattern="" placeholder="主办单位名称"/>
+                    </div>
+                </div>
+                <div class="weui-cells weui-cells_form">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <textarea class="weui-textarea" placeholder="填写会议内容" rows=""></textarea>
+                            <div class="weui-textarea-counter"><span>0</span>/200</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells weui-cells_form">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <div class="weui-uploader">
+                                <div class="weui-uploader__hd">
+                                    <p class="weui-uploader__title">上传会议补充图片（可选）</p>
+                                    <div class="weui-uploader__info">0/2</div>
+                                </div>
+                                <div class="weui-uploader__bd">
+                                    <div class="weui-uploader__input-box">
+                                        <input id="uploaderInput" class="weui-uploader__input" type="file"
+                                               accept="image/*" multiple/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells weui-cells_checkbox">
+                    <label class="weui-cell weui-check__label" for="s11">
+                        <div class="weui-cell__hd">
+                            <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked"/>
+                            <i class="weui-icon-checked"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>参会人需填写基本信息回执</p>
+                        </div>
+                    </label>
+                    <label class="weui-cell weui-check__label" for="s12">
+                        <div class="weui-cell__hd">
+                            <input type="checkbox" name="checkbox1" class="weui-check" id="s12"/>
+                            <i class="weui-icon-checked"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>参会人需填写交通回执</p>
+                        </div>
+                    </label>
+                </div>
+                <div class="weui-cells weui-cells_form">
+                    <div class="weui-cell weui-cell_switch">
+                        <div class="weui-cell__bd">仅被邀人参会</div>
+                        <div class="weui-cell__ft">
+                            <input class="weui-switch" type="checkbox"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">会议人数</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="number" pattern="" placeholder="会议人数"/>
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_vcode">
+                    <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="number" placeholder="请输入验证码"/>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <img class="weui-vcode-img" src="../images/vcode.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-navbar">
+                <div class="weui-navbar__item weui_bar__item_on">
+                    我发起的
+                </div>
+                <div class="weui-navbar__item">
+                    我参与的
+                </div>
+                <div class="weui-navbar__item">
+                    设置
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('.weui-tabbar__item').on('click', function () {
+            $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+        });
+    });
+</script>
+
+</body>
+</html>

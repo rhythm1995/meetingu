@@ -1,0 +1,99 @@
+.all-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page .weui-navbar{
+    height: 50px;
+    position: fixed;
+    margin-top: 690px;
+}
+
+.createReturn .page-top{
+    width: 100%;
+    height: 120px;
+    background: url("../img/huizhi.jpg") no-repeat;
+    background-size: cover;
+}
+
+.createMeeting .page-top{
+     width: 100%;
+     height: 120px;
+     background: url("../img/faqi.jpg") no-repeat;
+     background-size: cover;
+}
+
+.personMessage .page-top{
+    width: 100%;
+    height: 120px;
+    background: url("../img/geren.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+.home .page-top{
+    width: 100%;
+    height: 220px;
+    background: url("../img/top.png") no-repeat;
+    background-size: cover;
+}
+
+.home ul li{
+    list-style: none;
+    margin-left:5%;
+    margin-top:5%;
+}
+
+.home li span{
+    margin-left: 15%;
+}
+
+.home #publish{
+    height: 100px;
+    background: url("../img/index/publish.png") no-repeat;
+    background-size: contain;
+}
+.home li div:hover{
+    opacity: 0.7;
+}
+.home #release{
+    height: 100px;
+    background: url("../img/index/download.png") no-repeat;
+    background-size: contain;
+}
+.home #search{
+    height: 100px;
+    background: url("../img/index/find.png") no-repeat;
+    background-size: contain;
+}
+
+.index .buttons li{
+    list-style: none;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.index .buttons li:hover{
+    opacity: 0.7;
+}
+
+.index .buttons #cloud-meeting{
+    height: 110px;
+    background: url("../img/index/button1.jpg") no-repeat;
+    background-size: contain;
+}
+.index .buttons #popular-meeting{
+    height: 110px;
+    background: url("../img/index/button2.jpg") no-repeat;
+    background-size: contain;
+}
+.index .buttons #recent-meeting{
+    height: 110px;
+    background: url("../img/index/button3.jpg") no-repeat;
+    background-size: contain;
+}
+.index .buttons #nearby-meeting{
+    height: 110px;
+    background: url("../img/index/button4.jpg") no-repeat;
+    background-size: contain;
+}

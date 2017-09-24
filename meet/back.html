@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css">
+	<script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.1.2/weui.min.js"></script>
+	<link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+<div class="page createReturn">
+	<div class="page-top">
+	</div>
+	<div class="page__bd">
+		<h1 class="page__title">会议名称</h1>
+		<div class="weui-cells__title">选择交通工具</div>
+		<div class="weui-cells weui-cells_radio">
+			<label class="weui-cell weui-check__label" for="x11">
+				<div class="weui-cell__bd">
+					<p>飞机</p>
+				</div>
+				<div class="weui-cell__ft">
+					<input type="radio" class="weui-check" name="radio1" id="x11"/>
+					<span class="weui-icon-checked"></span>
+				</div>
+			</label>
+			<label class="weui-cell weui-check__label" for="x12">
+				<div class="weui-cell__bd">
+					<p>火车</p>
+				</div>
+				<div class="weui-cell__ft">
+					<input type="radio" name="radio1" class="weui-check" id="x12" checked="checked"/>
+					<span class="weui-icon-checked"></span>
+				</div>
+			</label>
+			<label class="weui-cell weui-check__label" for="x13">
+				<div class="weui-cell__bd">
+					<p>其他</p>
+				</div>
+				<div class="weui-cell__ft">
+					<input type="radio" class="weui-check" name="radio1" id="x13"/>
+					<span class="weui-icon-checked"></span>
+				</div>
+			</label>
+		</div>
+		<div class="weui-cells__title">选择此次班次人员</div>
+		<div class="weui-cells weui-cells_checkbox">
+			<label class="weui-cell weui-check__label" for="s11">
+				<div class="weui-cell__hd">
+					<input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked"/>
+					<i class="weui-icon-checked"></i>
+				</div>
+				<div class="weui-cell__bd">
+					<p>standard is dealt for u.</p>
+				</div>
+			</label>
+			<label class="weui-cell weui-check__label" for="s12">
+				<div class="weui-cell__hd">
+					<input type="checkbox" name="checkbox1" class="weui-check" id="s12"/>
+					<i class="weui-icon-checked"></i>
+				</div>
+				<div class="weui-cell__bd">
+					<p>standard is dealicient for u.</p>
+				</div>
+			</label>
+			<a href="javascript:void(0);" class="weui-cell weui-cell_link">
+				<div class="weui-cell__bd">添加新的航班/车次</div>
+			</a>
+		</div>
+
+		<div class="weui-btn-area">
+			<a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">确定</a>
+		</div>
+
+		<div class="weui-navbar">
+			<div class="weui-navbar__item weui_bar__item_on">
+				我发起的
+			</div>
+			<div class="weui-navbar__item">
+				我参与的
+			</div>
+			<div class="weui-navbar__item">
+				设置
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        var $tooltips = $('.js_tooltips');
+
+        $('#showTooltips').on('click', function(){
+            if ($tooltips.css('display') != 'none') return;
+
+            // toptips的fixed, 如果有`animation`, `position: fixed`不生效
+            $('.page.cell').removeClass('slideIn');
+
+            $tooltips.css('display', 'block');
+            setTimeout(function () {
+                $tooltips.css('display', 'none');
+            }, 2000);
+        });
+    });
+</script>
+</body>
+</html>
