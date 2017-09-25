@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css">
     <script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.1.2/weui.min.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.js"></script>
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
@@ -19,21 +20,19 @@
             <li id="recent-meeting"></li>
             <li id="nearby-meeting"></li>
         </ul>
-        <div class="weui-navbar">
-            <div class="weui-navbar__item weui_bar__item_on">
-                我发起的
-            </div>
-            <div class="weui-navbar__item">
-                我参与的
-            </div>
-            <div class="weui-navbar__item">
-                设置
-            </div>
+    </div>
+    <div class="weui-navbar">
+        <div class="weui-navbar__item weui_bar__item_on">
+            我发起的
+        </div>
+        <div class="weui-navbar__item">
+            我参与的
+        </div>
+        <div class="weui-navbar__item">
+            设置
         </div>
     </div>
 </div>
-<script src="./js/zepto.js"></script>
-
 <script type="text/javascript">
     $(function(){
         $('.weui-tabbar__item').on('click', function () {
